@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Dharmasun.iml" filepath="$PROJECT_DIR$/Dharmasun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample-Project-Setup.iml" filepath="$PROJECT_DIR$/Sample-Project-Setup.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

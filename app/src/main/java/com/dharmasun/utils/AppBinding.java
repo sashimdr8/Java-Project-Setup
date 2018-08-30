@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.bumptech.glide.DrawableTypeRequest;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
@@ -52,26 +51,26 @@ public class AppBinding {
             Glide.with(imageView.getContext()).load(url).into(imageView);
     }
 
-    @BindingAdapter({"imageUrl", "placeholder"})
-    public static void setImageUrl(ImageView imageView, String url, Drawable placeholder) {
-        if (!isEmpty(url))
-            Glide.with(imageView.getContext()).load(url)
-                    .placeholder(placeholder).into(imageView);
-        else
-            imageView.setImageDrawable(placeholder);
-    }
+//    @BindingAdapter({"imageUrl", "placeholder"})
+//    public static void setImageUrl(ImageView imageView, String url, Drawable placeholder) {
+//        if (!isEmpty(url))
+//            Glide.with(imageView.getContext()).load(url)
+//                    .placeholder(placeholder).into(imageView);
+//        else
+//            imageView.setImageDrawable(placeholder);
+//    }
 
 
-    @BindingAdapter({"imageUrl", "placeholder"})
-    public static void setImageUrl(ImageView imageView, String url, @DrawableRes int placeholder) {
-        if (!isEmpty(url)) {
-            DrawableTypeRequest creator = Glide.with(imageView.getContext()).load(url);
-            if (placeholder > 0)
-                creator.placeholder(placeholder).error(placeholder);
-            creator.into(imageView);
-        } else
-            imageView.setImageResource(placeholder);
-    }
+//    @BindingAdapter({"imageUrl", "placeholder"})
+//    public static void setImageUrl(ImageView imageView, String url, @DrawableRes int placeholder) {
+//        if (!isEmpty(url)) {
+//            DrawableTypeRequest creator = Glide.with(imageView.getContext()).load(url);
+//            if (placeholder > 0)
+//                creator.placeholder(placeholder).error(placeholder);
+//            creator.into(imageView);
+//        } else
+//            imageView.setImageResource(placeholder);
+//    }
 
     @BindingAdapter("visible")
     public static void setVisibility(View view, boolean visible) {
